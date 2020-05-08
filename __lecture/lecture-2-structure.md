@@ -23,7 +23,7 @@ const state = {
     name: 'Bugs Bunny',
     species: 'Wabbit',
   },
-  orders: [
+  order: [
     {
       date: '01/02/03',
       items: ['carrot', 'carrot', 'carrot', 'ACME powder'],
@@ -110,7 +110,7 @@ export default combineReducers({
   number: numberReducer,
 });
 
-// What is the initial state?
+// {color: `red`, number: 4}
 ```
 
 ---
@@ -129,7 +129,7 @@ export default combineReducers({
   location: locationReducer,
 });
 
-// What is the initial state?
+// {item: {hi: 5}, location: `montreal`}
 ```
 
 ---
@@ -148,7 +148,7 @@ export default combineReducers({
   household: furnitureReducer,
 });
 
-// What is the initial state?
+// {pet: `cat`, household: `couch`}
 ```
 
 ---
@@ -178,7 +178,7 @@ export default combineReducers({
   ui: uiReducer,
 });
 
-// What is the initial state?
+// {data: {entries: []}, ui: {modal: null, tooltip: null}}
 ```
 
 ---
